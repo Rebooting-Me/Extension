@@ -1,4 +1,4 @@
-# Extension (!Beta)
+# Vocab Go Extension (!Beta)
 ## A utility based vocabulary extension 
 Have you ever felt frustrated before when you couldn't understand a word of the article you are reading on Web and have to look it up elsewhere? The irritation to look it up many times kills the desire to even leanr new words anymore.
 This extension attempts to tackle this very problem of yours!
