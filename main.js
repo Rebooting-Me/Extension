@@ -5,7 +5,7 @@ let defining = document.getElementById("info")
 let audio = document.getElementById("myAudio")
 let title = document.getElementsByTagName("title")
 
-word.innerHTML = "intimidation"
+word.innerHTML = "pick"
 word = word.innerHTML
 
 title.innerHTML = word;
