@@ -5,8 +5,13 @@ let defining = document.getElementById("info")
 let audio = document.getElementById("myAudio")
 let title = document.getElementsByTagName("title")
 
-word.innerHTML = "pick"
+
+// let bgPage = chrome.extension.getBackgroundPage()
+// let updatedWord = bgPage.selectedWord
+
+word.innerHTML = "update"
 word = word.innerHTML
+console.log(word)
 
 title.innerHTML = word;
 
@@ -47,7 +52,7 @@ async function getDefintion(){
     if(audio.innerHTML !== ""){
         document.getElementById("imageOfSpeaker").innerHTML = ` <img src="volume-high.svg" class="speaker" onclick="playAudio()">`;
         if(document.getElementById("imageOfSpeaker").innerHTML !== null){
-            console.log("Success!")
+            console.log("Audio successfully loaded!")
         }
     }
 }
