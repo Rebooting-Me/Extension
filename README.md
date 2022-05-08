@@ -5,6 +5,45 @@ This extension attempts to tackle this very problem of yours!
 1. Select a word you want to look up.
 2. Just click the extension icon.
 
+A manifest file is created whose attributes are :
+```
+{
+    "name": "Vocab Go",
+    "description": "Build an Extension!",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": {
+          "16": "16.png",
+          "32": "32.png",
+          "64": "64.png",
+          "128": "128.png"
+        },
+
+        "default_popup": "index.html",
+        "default_title": "Here comes the definition!"
+        
+    },
+
+    "icons" : {
+        "16": "16.png",
+        "32": "32.png",
+        "64": "64.png",
+        "128": "128.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+
+    "background": {
+        "service_worker": "background.js"
+    }
+    
+}
+``` 
+
 And you are done! The vocabulary card will display the meaning on the very same page where you are reading it!
 
 
